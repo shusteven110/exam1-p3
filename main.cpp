@@ -25,10 +25,10 @@ int sc_main(int argc, char **argv) {
   SobelFilter sobel_filter("sobel_filter");
   tb.initiator.i_skt(sobel_filter.t_skt);
 
-  tb.read_bmp(argv[1]);
+  // tb.read_bmp(argv[1]);
   sc_start();
   std::cout << "Simulated time == " << sc_core::sc_time_stamp() << std::endl;
-  tb.write_bmp(argv[2]);
+  // tb.write_bmp(argv[2]);
 
   return 0;
 }

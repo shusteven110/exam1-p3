@@ -159,15 +159,16 @@ void Testbench::do_sobel() {
       else{
         R = x_input_signal[i+j];
       }
-          data.uc[0] = R;
-          mask[0] = 0xff;
-          mask[1] = 0;
-          mask[2] = 0;
-          mask[3] = 0;
-          initiator.write_to_socket(SOBEL_FILTER_R_ADDR, mask, data.uc, 4);
-          wait(1 * CLOCK_PERIOD, SC_NS);
-        }
-      }
+      data.uc[0] = R;
+      mask[0] = 0xff;
+      mask[1] = 0;
+      mask[2] = 0;
+      mask[3] = 0;
+      // printf("%f\n",R);
+      initiator.write_to_socket(SOBEL_FILTER_R_ADDR, mask, data.uc, 4);
+      wait(1 * CLOCK_PERIOD, SC_NS);
+    }
+  }
 
     //   bool done=false;
     //   int output_num=0;

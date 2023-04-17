@@ -38,7 +38,7 @@ void SobelFilter::do_filter() {
     // }
     // int result = (int)(std::sqrt(total));
     o_result.write(result);
-    printf("%f\n",result);
+    // printf("%f\n",result);
     wait(3); //emulate module delay
   }
 }
