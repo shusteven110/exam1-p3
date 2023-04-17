@@ -144,12 +144,12 @@ void Testbench::do_sobel() {
   word data;
   unsigned char mask[4];
   //wait(5 * CLOCK_PERIOD, SC_NS);
-  for (y = 0; y != height; ++y) {
-    for (x = 0; x != width; ++x) {
-      adjustX = (MASK_X % 2) ? 1 : 0; // 1
-      adjustY = (MASK_Y % 2) ? 1 : 0; // 1
-      xBound = MASK_X / 2;            // 1
-      yBound = MASK_Y / 2;            // 1
+  // for (y = 0; y != height; ++y) {
+  //   for (x = 0; x != width; ++x) {
+  //     adjustX = (MASK_X % 2) ? 1 : 0; // 1
+  //     adjustY = (MASK_Y % 2) ? 1 : 0; // 1
+  //     xBound = MASK_X / 2;            // 1
+  //     yBound = MASK_Y / 2;            // 1
 
   for(int i=0;i<128;i++){
     for(int j=-1;j<=1;j++){
