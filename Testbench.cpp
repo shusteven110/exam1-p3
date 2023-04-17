@@ -194,6 +194,6 @@ void Testbench::do_sobel() {
     //     *(target_bitmap + bytes_per_pixel * (width * y + x) + 0) = WHITE;
     //   }
     // }
-  }
+  // }
   sc_stop();
 }
